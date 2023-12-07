@@ -1,12 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>Hello world!</title>
+<title>JSP 웹 게시판 사이트</title>
 </head>
 <body>
-Hello world
+	<script>
+		location.href = 'login.jsp';
+	</script>
 </body>
 </html>
