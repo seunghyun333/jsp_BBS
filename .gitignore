@@ -1,0 +1,34 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Compiled class file
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Maven
+target/
+
+# Gradle
+build/
+
+# IntelliJ
+.idea/
+
+# JSP generated files
+*_jsp.java
+*_jsp.class
+*_jsp.html
+*_jsp.inc
+_meta-inf/
