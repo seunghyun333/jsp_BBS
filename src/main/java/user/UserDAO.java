@@ -10,7 +10,7 @@ public class UserDAO {
 
 	private Connection conn; //Connection 객체는 데이터베이스와의 연결
 	private PreparedStatement pstmt; //SQL 문을 미리 컴파일하여 실행 속도를 향상
-	private ResultSet rs; //이터베이스에서 가져온 결과를 저장하고 조회하는 데 사용
+	private ResultSet rs; //데이터베이스에서 가져온 결과를 저장하고 조회하는 데 사용
 	
 	public UserDAO() {
 		try {
@@ -41,6 +41,22 @@ public class UserDAO {
 			e.printStackTrace();
 		}
 		return -2;  //DB 오류 
+	}
+	
+	public int join(User user) {
+		String SQL = "INSERT INTO USER VALUES(?,?,?,?,?)";
+		try {
+			pstmt = conn.prepareStatement(SQL);
+			pstmt.setString(1, user.getUserID());
+			pstmt.setString(2, user.getUserPassword());
+			pstmt.setString(3, user.getUserName());
+			pstmt.setString(4, user.getUserGender());
+			pstmt.setString(5, user.getUserEmail());
+			return pstmt.executeUpdate();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		return -1; // db 오류
 	}
 
 }
