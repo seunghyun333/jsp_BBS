@@ -109,9 +109,21 @@
 					<td colspan="2"><%=bbs.getBbsDate().substring(0, 11) + bbs.getBbsDate().substring(11, 13) + "시 "
 							+ bbs.getBbsDate().substring(14, 16) + "분"%></td>
 				</tr>
+				<tr>
+					<td>내용 </td>
+					<td colspan="2" style="min-height: 200px; text-align: left;"><%= bbs.getBbsContent() %></td>
+				</tr>
 			</tbody>
 			</table>
-			<input type="submit" class="btn btn-primary pull-right" value="글쓰기">			
+			<a href="bbs.jsp" class="btn btn-primary">목록</a>
+			<%
+				if(userID != null && userID.equals(bbs.getUserID())) {
+			%>
+				<a href="update.jsp?bbsID=<%= bbsID %>" class="btn btn-primary">수정</a>
+				<a href=deleteAction.jsp?bbsID=<%= bbsID %>" class="btn btn-primary">삭제</a>
+			<%
+				}
+			%>
 		</div>
 	</div>
 
