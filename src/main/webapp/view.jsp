@@ -7,6 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="css/custom.css">
 <title>jsp 게시판 웹 사이트</title>
 <meta name="viewport" content="width=device-width", initial-scale="1">
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -121,7 +122,7 @@
 				if(userID != null && userID.equals(bbs.getUserID())) {
 			%>
 				<a href="update.jsp?bbsID=<%= bbsID %>" class="btn btn-primary">수정</a>
-				<a href="dele.jsp?bbsID=<%= bbsID %>" class="btn btn-primary">삭제</a>
+				<a onclick="return confirm('정말로 삭제하시겠습까?')" href="deleteAction.jsp?bbsID=<%= bbsID %>" class="btn btn-primary">삭제</a>
 			<%
 				}
 			%>

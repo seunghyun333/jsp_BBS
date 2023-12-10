@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width", initial-scale="1">
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
-
+<link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
@@ -72,6 +72,42 @@
 		
 	</div>
 </nav>
+	<div class="container">
+		<div class ="jumbotron"> <!-- 부트스트랩에서 제공하는 웹사이트를 소개하는 영역 꾸미기   -->
+			<div class="container">
+				<h1>웹사이트 소개</h1>
+				<p>이 웹사이트는 부트스트랩으로 만든 JSP 웹 사이트입니다. 최소한의 간단한 로직만을 이용해서 개발했습니다. 디자인 템플릿으로는 부트스트랩을 사용했습니다.</p>
+				<a class="btn btn-primary btn-pull" href="https://equal-suede-599.notion.site/6f20e03a01d5431ba51db426e4bc6310?pvs=4" role="button">포트폴리오 전체보기</a>
+			</div>
+		
+		</div>
+	</div>
+	<div class="container">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="images/1.jpeg">
+				</div>
+				<div class="item">
+					<img src="images/2.jpeg">
+				</div>
+				<div class="item">
+					<img src="images/3.jpeg">
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+	</div>
 
 </body>
 </html>

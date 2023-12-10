@@ -4,6 +4,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="css/custom.css">
 <title>JSP 웹 게시판 사이트</title>
 </head>
 <body>
