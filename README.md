@@ -8,3 +8,5 @@
 <img width="833" alt="스크린샷 2023-12-12 오후 11 56 52" src="https://github.com/seunghyun333/jsp_BBS/assets/128073991/01301776-6a00-4709-97fa-326c0d87a32a">
 
 <img width="827" alt="스크린샷 2023-12-12 오후 11 59 41" src="https://github.com/seunghyun333/jsp_BBS/assets/128073991/94b761b8-e2e2-46ce-9e5b-03d23f498f85">
+
+<img width="816" alt="image" src="https://github.com/seunghyun333/jsp_BBS/assets/128073991/dc22d4ec-85df-4e8a-bde0-4600049aaa86">
